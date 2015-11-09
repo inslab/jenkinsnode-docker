@@ -1,5 +1,5 @@
 # jenkinsnode-docker
-====================
+--------------------
 Based on Ubuntu 14.04 and installed openjdk-7-jdk for Jenkins connection
 
 Environmental Variables

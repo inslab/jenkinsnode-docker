@@ -18,7 +18,6 @@ service ssh restart
 if [ -z "${SCRIPT_REPO_URL}" -o -z "${SCRIPT_FILE}" ]
 then
     echo "SCRIPT_REPO_URL and SCRIPT_FILE env variables are needed!"
-    exit 1
 else
     curl -L ${SCRIPT_REPO_URL}/${SCRIPT_FILE} -o /tmp/${SCRIPT_FILE}
     chmod +x /tmp/${SCRIPT_FILE}

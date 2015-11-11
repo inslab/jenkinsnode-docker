@@ -11,6 +11,8 @@ EXPOSE 22
 # ENV SCRIPT_REPO_URL is needed
 # ENV SCRIPT_FILE is needed
 
+VOLUME /home
+
 COPY start.sh /tmp/
 RUN chmod +x /tmp/*.sh
 CMD ["/bin/bash", "-e", "/tmp/start.sh"]

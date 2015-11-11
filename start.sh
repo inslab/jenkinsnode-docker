@@ -19,6 +19,7 @@ if [ -z "${SCRIPT_REPO_URL}" -o -z "${SCRIPT_FILE}" ]
 then
     echo "SCRIPT_REPO_URL and SCRIPT_FILE env variables are needed!"
 else
+    echo "Download script ${SCRIPT_REPO_URL}/${SCRIPT_FILE}"
     curl -L ${SCRIPT_REPO_URL}/${SCRIPT_FILE} -o /tmp/${SCRIPT_FILE}
     chmod +x /tmp/${SCRIPT_FILE}
     /tmp/${SCRIPT_FILE}
